@@ -1,72 +1,147 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="28" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12B19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
+        <!--Lets First View Controller - Home-->
         <scene sceneID="11">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
-                <viewController title="First" id="2" customClass="LetsFirstViewController" sceneMemberID="viewController">
+                <viewController title="Home" id="2" customClass="LetsFirstViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="20">
-                                <rect key="frame" x="54" y="98" width="212" height="43"/>
+                            <navigationBar contentMode="scaleToFill" id="xri-KH-VW8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" id="21">
-                                <rect key="frame" x="20" y="181" width="280" height="88"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <string key="text">Loaded by the first view controller — an instance of LetsFirstViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                                <items>
+                                    <navigationItem title="Home" id="dfP-yv-Yh3"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="7"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
+        <!--Lets Second View Controller - Tasks-->
         <scene sceneID="13">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
-                <viewController title="Second" id="3" customClass="LetsSecondViewController" sceneMemberID="viewController">
+                <viewController title="Tasks" id="3" customClass="LetsSecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="22">
-                                <rect key="frame" x="54" y="98" width="212" height="43"/>
+                            <navigationBar contentMode="scaleToFill" id="JD8-0Q-VKk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" id="23">
-                                <rect key="frame" x="20" y="181" width="280" height="88"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <string key="text">Loaded by the second view controller — an instance of LetsSecondViewController — specified in the app delegate.</string>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
+                                <items>
+                                    <navigationItem title="Tasks" id="xAa-jh-7Cs">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="roZ-JT-EFI"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="Checkmark.png" id="6"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="ETi-zq-o9D" id="ThR-PS-EQD"/>
+                    </connections>
                 </viewController>
+                <searchDisplayController id="ETi-zq-o9D">
+                    <connections>
+                        <outlet property="delegate" destination="3" id="0oi-Y4-VsN"/>
+                        <outlet property="searchContentsController" destination="3" id="72u-Bj-Mp5"/>
+                        <outlet property="searchResultsDataSource" destination="3" id="dR6-qw-p5F"/>
+                        <outlet property="searchResultsDelegate" destination="3" id="jJ4-r1-esc"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
+        <!--Lets Third View Controller - Groups-->
+        <scene sceneID="0kg-JJ-LCe">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="roi-FD-VWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Groups" id="Vwe-zW-Hrb" customClass="LetsThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ijb-Wz-PJE">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="vau-jN-08V">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Groups" id="oLc-rz-TIj">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sjd-lU-hmY"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Groups" image="group.png" id="EMf-Vf-qeP"/>
+                    <navigationItem key="navigationItem" id="z80-LS-kpo"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="1079"/>
+        </scene>
+        <!--Lets Fourth View Controller - Friends-->
+        <scene sceneID="rpB-M0-rHC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rk3-iP-sbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Friends" id="ala-kZ-ZWI" customClass="LetsFourthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nge-qs-bUI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="49c-Y7-fNt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Friends" id="Zs5-Tk-y8D"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friends" image="friends.png" id="i69-3G-ikE"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="1675"/>
+        </scene>
+        <!--Lets Fifth View Controller - Settings-->
+        <scene sceneID="0SX-lr-D36">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aN-bl-Hb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Settings" id="uZn-4e-yA8" customClass="LetsFifthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ff4-TW-51c">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="ogW-Wm-AzN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings" id="xt0-45-RBg"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Gear.png" id="og0-yb-thd"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="2279"/>
+        </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -80,16 +155,39 @@
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="Vwe-zW-Hrb" kind="relationship" relationship="viewControllers" id="vC2-OF-7w1"/>
+                        <segue destination="ala-kZ-ZWI" kind="relationship" relationship="viewControllers" id="Kb9-bQ-qwe"/>
+                        <segue destination="uZn-4e-yA8" kind="relationship" relationship="viewControllers" id="Vsb-QO-fQa"/>
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="-963" y="1068"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
+        <image name="Checkmark.png" width="30" height="30"/>
+        <image name="Gear.png" width="27" height="27"/>
+        <image name="friends.png" width="28" height="28"/>
+        <image name="group.png" width="32" height="21"/>
+        <image name="home.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="LetsFifthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LetsFifthViewController.h"/>
+        </class>
+        <class className="LetsFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LetsFirstViewController.h"/>
+        </class>
+        <class className="LetsFourthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LetsFourthViewController.h"/>
+        </class>
+        <class className="LetsSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LetsSecondViewController.h"/>
+        </class>
+        <class className="LetsThirdViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LetsThirdViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
