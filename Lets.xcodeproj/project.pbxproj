@@ -148,9 +148,9 @@
 		9D141E4B15F0494B00EB8D6F /* Lets */ = {
 			isa = PBXGroup;
 			children = (
+				9D141E5715F0494B00EB8D6F /* MainStoryboard.storyboard */,
 				9D141E5415F0494B00EB8D6F /* LetsAppDelegate.h */,
 				9D141E5515F0494B00EB8D6F /* LetsAppDelegate.m */,
-				9D141E5715F0494B00EB8D6F /* MainStoryboard.storyboard */,
 				9D141E5A15F0494B00EB8D6F /* LetsFirstViewController.h */,
 				9D141E5B15F0494B00EB8D6F /* LetsFirstViewController.m */,
 				9D141E6115F0494B00EB8D6F /* LetsSecondViewController.h */,
